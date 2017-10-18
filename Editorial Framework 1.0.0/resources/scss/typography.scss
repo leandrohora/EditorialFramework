@@ -1,0 +1,14 @@
+/* All measures in rem were based on 10px. Therefore 1.6rem = 16px */
+/* Typography */
+html {
+  font-size: 10px;
+}
+
+body {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  font-weight: 400;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  color: #000;
+}
