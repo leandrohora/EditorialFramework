@@ -5,6 +5,6 @@ DS_Store
 .ini
 .map
 
-# ignora pacotes do node (dependências do grunt)
+# ignora pacotes do node (dependências do grunt/gulp)
 node_modules/
 
