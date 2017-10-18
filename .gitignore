@@ -1,9 +1,6 @@
-﻿# ignora arquivos indesejados
+# ignora arquivos indesejados
 .DS_Store
 DS_Store
-.sublime-workspace
-.ini
-.map
 
 # ignora pacotes do node (dependências do grunt/gulp)
 node_modules/
