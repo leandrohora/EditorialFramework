@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Editorial Framework</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="resources/css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="resources/css/framework.css">
+	<link rel="stylesheet" type="text/css" href="resources/css/custom.css">
+
+	<link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto+Mono:100,300,400,500,700" rel="stylesheet">
+</head>
+<body>
+
+<!-- Header -->
+<header class="elements">
+	<div class="container">
+		<div class="row-m">
+			<div class="col-12">
+				<div class="content">
+					<div class="logo-wrapper">
+						<a class="logo" href="index.html">Editorial Framework</a>
+					</div>
+					<nav class="menu-wrapper">
+						<a href="index.html" class="menu-item">começando</a>
+						<a href="componentes.html" class="menu-item">componentes</a>
+					</nav>
+				</div>
+			</div>
+		</div>		
+	</div>
+</header>
+<!-- Header -->
+
+<section id="wrapper-element">
+<div class="container">
+	<!-- Grid -->
+	<section id="grid" class="element">
+		<div class="row-m">
+			<div class="col-12">
+				<article>
+					<h5>Sistema de grid</h5>
+					<p>Pellentesque vel tempor neque. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Ut eu orci sit amet massa hendrerit sollicitudin mattis et mi. Pellentesque vel tempor neque.</p>	
+				</article>
+			</div>
+		</div>
+
+		<div class="row-m">
+			<div class="coll-12">
+				<div class="select-grid">
+					<a href="javascript:void(0)" class="grid-button">Mostrar Grid</a>
+				</div>
+			</div>			
+		</div>
+
+		<div class="grid-wrapper">
+
+			<div class="base-grid">
+				<div class="row">
+					<div class="col-1"></div>
+					<div class="col-1"></div>
+					<div class="col-1"></div>
+					<div class="col-1"></div>
+					<div class="col-1"></div>
+					<div class="col-1"></div>
+					<div class="col-1"></div>
+					<div class="col-1"></div>
+					<div class="col-1"></div>
+					<div class="col-1"></div>
+					<div class="col-1"></div>
+					<div class="col-1"></div>
+				</div>
+			</div>
+
+			<div class="grid">
+				<div class="row-m">
+					<div class="col-1">Um</div>
+					<div class="col-11">Onze</div>		
+				</div>
+				<div class="row-m">
+					<div class="col-2">Dois</div>
+					<div class="col-10">Dez</div>		
+				</div>
+				<div class="row-m">
+					<div class="col-3">Três</div>
+					<div class="col-9">Nove</div>		
+				</div>
+				<div class="row-m">
+					<div class="col-4">Quatro</div>
+					<div class="col-8">Oito</div>		
+				</div>
+				<div class="row-m">
+					<div class="col-5">Cinco</div>
+					<div class="col-7">Sete</div>		
+				</div>
+				<div class="row-m">
+					<div class="col-6">Seis</div>
+					<div class="col-6">Seis</div>		
+				</div>			
+			</div>
+		</div>
+		<div class="code-wrapper">
+			<div class="row-m">
+				<div class="col-6">
+					<div class="code-box">
+						<span class="title">Normal - <span class="subtitle">Largura máxima: 100%</span><i>Copiar</i></span>
+<pre><code>&lt;<span class="tag">div</span> <span class="class">class</span>=<span class="valor">"row"</span>&gt;
+   &lt;<span class="tag">div</span> <span class="class">class</span>=<span class="valor">"col-1"</span>&gt; ... &lt;/<span class="tag">div</span>&gt;
+   &lt;<span class="tag">div</span> <span class="class">class</span>=<span class="valor">"col-11"</span>&gt; ... &lt;/<span class="tag">div</span>&gt;		
+&lt;/<span class="tag">div</span>&gt;</code></pre>
+					</div>
+				</div>
+				<div class="col-6">
+					<div class="code-box">
+						<span class="title">Small - <span class="subtitle">Largura máxima: 400px</span> <i>Copiar</i></span>
+<pre><code>&lt;<span class="tag">div</span> <span class="class">class</span>=<span class="valor">"row-s"</span>&gt;
+   &lt;<span class="tag">div</span> <span class="class">class</span>=<span class="valor">"col-1"</span>&gt; ... &lt;/<span class="tag">div</span>&gt;
+   &lt;<span class="tag">div</span> <span class="class">class</span>=<span class="valor">"col-11"</span>&gt; ... &lt;/<span class="tag">div</span>&gt;		
+&lt;/<span class="tag">div</span>&gt;</code></pre>
+					</div>
+				</div>
+			</div>
+			<div class="row-m">
+				<div class="col-6">
+					<div class="code-box">
+						<span class="title">Medium - <span class="subtitle">Largura máxima: 550px</span> <i>Copiar</i></span>
+<pre><code>&lt;<span class="tag">div</span> <span class="class">class</span>=<span class="valor">"row-m"</span>&gt;
+   &lt;<span class="tag">div</span> <span class="class">class</span>=<span class="valor">"col-1"</span>&gt; ... &lt;/<span class="tag">div</span>&gt;
+   &lt;<span class="tag">div</span> <span class="class">class</span>=<span class="valor">"col-11"</span>&gt; ... &lt;/<span class="tag">div</span>&gt;		
+&lt;/<span class="tag">div</span>&gt;</code></pre>
+					</div>
+				</div>
+				<div class="col-6">
+					<div class="code-box">
+						<span class="title">Large - <span class="subtitle">Largura máxima: 750px</span> <i>Copiar</i></span>
+<pre><code>&lt;<span class="tag">div</span> <span class="class">class</span>=<span class="valor">"row-l"</span>&gt;
+   &lt;<span class="tag">div</span> <span class="class">class</span>=<span class="valor">"col-1"</span>&gt; ... &lt;/<span class="tag">div</span>&gt;
+   &lt;<span class="tag">div</span> <span class="class">class</span>=<span class="valor">"col-11"</span>&gt; ... &lt;/<span class="tag">div</span>&gt;		
+&lt;/<span class="tag">div</span>&gt;</code></pre>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Grid -->
+
+	<!-- Title -->
+	<section id="title" class="element">
+		<div class="row-m">
+			<div class="col-6">
+				<article>
+					<h5>Títulos</h5>
+					<p>Pellentesque vel tempor neque. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Ut eu orci sit amet massa hendrerit sollicitudin mattis et mi. Pellentesque vel tempor neque.</p>
+				</article>
+				<div class="code-box">
+					<span class="title">Títulos<i>Copiar</i></span>
+<pre><code>&lt;<span class="tag">h1</span>&gt;Legibilidade&lt;/<span class="tag">h1</span>&gt;
+&lt;<span class="tag">h2</span>&gt;Legibilidade&lt;/<span class="tag">h2</span>&gt;
+&lt;<span class="tag">h3</span>&gt;Legibilidade&lt;/<span class="tag">h3</span>&gt;
+&lt;<span class="tag">h4</span>&gt;Legibilidade&lt;/<span class="tag">h4</span>&gt;
+&lt;<span class="tag">h5</span>&gt;Legibilidade&lt;/<span class="tag">h5</span>&gt;
+&lt;<span class="tag">h6</span>&gt;Legibilidade&lt;/<span class="tag">h6</span>&gt;</code></pre>
+				</div>
+			</div>
+			<div class="col-6">
+				<div class="title-wrapper">
+					<h1><span class="subtitle">&lt;h1&gt; </span> Legibilidade<span class="subtitle">4.5 rem</span></h1>
+					<h2><span class="subtitle">&lt;h2&gt; </span> Legibilidade<span class="subtitle">4.0 rem</span></h2>
+					<h3><span class="subtitle">&lt;h3&gt; </span> Legibilidade<span class="subtitle">3.5 rem</span></h3>
+					<h4><span class="subtitle">&lt;h4&gt; </span> Legibilidade<span class="subtitle">3.0 rem</span></h4>
+					<h5><span class="subtitle">&lt;h5&gt; </span> Legibilidade<span class="subtitle">2.5 rem</span></h5>
+					<h6><span class="subtitle">&lt;h6&gt; </span> Legibilidade<span class="subtitle">2.0 rem</span></h6>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Title -->
+
+	<!-- Indentation -->
+	<section id="indentation" class="element">
+		<div class="row-m">
+			<div class="col-6">
+				<article>
+					<h5>Recuo</h5>
+					<p class="rec">Pellentesque vel tempor neque. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Ut eu orci sit amet massa hendrerit sollicitudin mattis et mi. Pellentesque vel tempor neque.</p>
+				</article>
+			</div>
+			<div class="col-6">
+				<div class="code-box">
+					<span class="title">Recuo<i>Copiar</i></span>
+<pre><code>&lt;<span class="tag">p</span> <span class="class">class</span>=<span class="valor">"rec"</span>&gt; Pellentesque vel tempor
+neque. Vestibulum ante ipsum primis in
+faucibus orci luctus et ultrices posuere
+cubilia Curae... &lt;/<span class="tag">p</span>&gt;</code></pre>
+				</div>
+			</div>
+		</div>		
+	</section>
+	<!-- Indentation -->
+
+	<!-- Captular -->
+	<section id="cap" class="element">
+		<div class="row-m">
+			<div class="col-6">
+				<article>
+					<h5>Captular</h5>
+					<p class="cap">Pellentesque vel tempor neque. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Ut eu orci sit amet massa hendrerit sollicitudin mattis et mi. Pellentesque vel tempor neque.</p>
+				</article>
+			</div>
+			<div class="col-6">
+				<div class="code-box">
+					<span class="title">Captular<i>Copiar</i></span>
+<pre><code>&lt;<span class="tag">p</span> <span class="class">class</span>=<span class="valor">"cap"</span>&gt; Pellentesque vel tempor
+neque. Vestibulum ante ipsum primis in
+faucibus orci luctus et ultrices posuere
+cubilia Curae... &lt;/<span class="tag">p</span>&gt;</code></pre>
+				</div>
+			</div>
+		</div>		
+	</section>
+	<!-- Captular -->
+
+
+	<!-- Eye -->
+	<section id="eye" class="element">
+		<div class="row-m">
+			<div class="col-6">
+				<article>
+					<h5>Olho</h5>
+					<p class="eye">Pellentesque vel tempor neque. Vestibulum ante ipsum primis in faucibus orci luctus.</p>
+				</article>
+			</div>
+			<div class="col-6">
+				<div class="code-box">
+					<span class="title">Olho<i>Copiar</i></span>
+<pre><code>&lt;<span class="tag">p</span> <span class="class">class</span>=<span class="valor">"eye"</span>&gt; Pellentesque vel tempor
+neque. Vestibulum ante ipsum primis in
+faucibus. &lt;/<span class="tag">p</span>&gt;</code></pre>
+				</div>
+			</div>
+		</div>		
+	</section>
+	<!-- Eye -->
+
+	<!-- Alignment -->
+	<section id="alignment" class="element">
+		<div class="row-m">
+			<div class="col-6">
+				<article>
+					<h5>Alinhamento</h5>
+					<p>Pellentesque vel tempor neque. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Ut eu orci sit amet massa hendrerit sollicitudin mattis et mi.</p>
+				</article>
+			</div>
+			<div class="col-6">
+				<div class="code-box">
+					<span class="title">Alinhamento<i>Copiar</i></span>
+<pre><code>&lt;<span class="tag">p</span> <span class="class">class</span>=<span class="valor">"text-left"</span>&gt; ... &lt;/<span class="tag">p</span>&gt;
+&lt;<span class="tag">p</span> <span class="class">class</span>=<span class="valor">"text-right"</span>&gt; ... &lt;/<span class="tag">p</span>&gt;
+&lt;<span class="tag">p</span> <span class="class">class</span>=<span class="valor">"text-center"</span>&gt; ... &lt;/<span class="tag">p</span>&gt;
+&lt;<span class="tag">p</span> <span class="class">class</span>=<span class="valor">"text-justify"</span>&gt; ... &lt;/<span class="tag">p</span>&gt;
+</code></pre>
+				</div>
+			</div>
+		</div>		
+	</section>
+	<!-- Alignment -->
+
+	<!--Weight -->
+	<section id="weight" class="element">
+		<div class="row-m">
+			<div class="col-6">
+				<article>
+					<h5>Peso</h5>
+					<p>Pellentesque vel tempor neque. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Ut eu orci sit amet massa hendrerit sollicitudin mattis et mi.</p>
+				</article>
+			</div>
+			<div class="col-6">
+				<div class="code-box">
+					<span class="title">Peso<i>Copiar</i></span>
+<pre><code>&lt;<span class="tag">span</span> <span class="class">class</span>=<span class="valor">"bolder"</span>&gt; bolder &lt;/<span class="tag">span</span>&gt;
+&lt;<span class="tag">span</span> <span class="class">class</span>=<span class="valor">"normal"</span>&gt; normal &lt;/<span class="tag">span</span>&gt;
+&lt;<span class="tag">span</span> <span class="class">class</span>=<span class="valor">"lighter"</span>&gt; lighter &lt;/<span class="tag">span</span>&gt;
+</code></pre>
+				</div>
+			</div>
+		</div>		
+	</section>
+	<!-- Weight -->
+
+	<!--Form -->
+	<section id="forms" class="element">
+		<div class="row-m">
+			<div class="col-6">
+				<article>
+					<h5>Formulários</h5>
+					<p>Pellentesque vel tempor neque. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Ut eu orci sit amet massa hendrerit sollicitudin mattis et mi.</p>
+				</article>
+			</div>
+
+			<div class="col-6">
+				<div class="row-s">
+					<div class="col-6">
+						<label>Nome</label>
+						<input type="text" name="nome" placeholder="nome">
+					</div>
+					<div class="col-6">
+						<label>Email</label>
+						<input type="email" name="email" placeholder="email">
+					</div>
+				</div>
+
+				<div class="row-s">
+					<div class="col-12">
+						<label>Mensagem</label>
+						<textarea placeholder="Deixe sua mensagem..."></textarea>
+						<input class="button-primary" type="submit" value="Enviar">
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="row-m">
+			<div class="col-12">
+				<div class="code-box code-box-margin">
+					<span class="title">Formulário<i>Copiar</i></span>
+<pre><code>&lt;<span class="tag">form</span>&gt;
+   &lt;<span class="tag">div</span> <span class="class">class</span>=<span class="valor">"row-s"</span>&gt;
+      &lt;<span class="tag">div</span> <span class="class">class</span>=<span class="valor">"col-6"</span>&gt;
+         &lt;<span class="tag">label</span>&gt; Nome &lt;/<span class="tag">label</span>&gt;
+         &lt;<span class="tag">input</span> <span class="class">type</span>=<span class="valor">"text"</span> <span class="class">name</span>=<span class="valor">"nome"</span> <span class="class">placeholder</span>=<span class="valor">"nome"</span> /&gt;
+      &lt;/<span class="tag">div</span>&gt;
+      &lt;<span class="tag">div</span> <span class="class">class</span>=<span class="valor">"col-6"</span>&gt;
+         &lt;<span class="tag">label</span>&gt; Email &lt;/<span class="tag">label</span>&gt;
+         &lt;<span class="tag">input</span> <span class="class">type</span>=<span class="valor">"email"</span> <span class="class">name</span>=<span class="valor">"email"</span> <span class="class">placeholder</span>=<span class="valor">"email"</span> /&gt;
+      &lt;/<span class="tag">div</span>&gt;
+   &lt;/<span class="tag">div</span>&gt;
+   &lt;<span class="tag">div</span> <span class="class">class</span>=<span class="valor">"row-s"</span>&gt;
+      &lt;<span class="tag">div</span> <span class="class">class</span>=<span class="valor">"col-12"</span>&gt;
+         &lt;<span class="tag">label</span>&gt; Mensagem &lt;/<span class="tag">label</span>&gt;
+         &lt;<span class="tag">textarea</span>&gt; &lt;/<span class="tag">textarea</span>&gt;
+         &lt;<span class="tag">input</span> <span class="class">class</span>=<span class="valor">"button-primary"</span> <span class="class">type</span>=<span class="valor">"submit"</span> <span class="class">value</span>=<span class="valor">"Enviar"</span>/&gt;
+      &lt;/<span class="tag">div</span>&gt;
+   &lt;/<span class="tag">div</span>&gt;
+&lt;/<span class="tag">form</span>&gt;</code></pre>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Form -->
+
+	<!--Table -->
+	<section id="table" class="element">
+		<div class="row-m">
+			<div class="col-12">
+				<article>
+					<h5>Tabelas</h5>
+					<p>Pellentesque vel tempor neque. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Ut eu orci sit amet massa hendrerit sollicitudin mattis et mi.</p>
+				</article>
+			</div>
+		</div>
+
+		<div class="row-m">
+			<div class="col-12">
+				<div class="select-table">
+					<a href="javascript:void(0)" class="table-button s">Striped</a>
+					<a href="javascript:void(0)" class="table-button h">Hover</a>
+					<a href="javascript:void(0)" class="table-button b">Border</a>
+					<a href="javascript:void(0)" class="table-button c">Condenced</a>
+				</div>
+
+				<table class="table">
+					<thead>
+						<tr>
+							<th>Nome</th>
+							<th>Idade</th>
+							<th>Email</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Lucas</td>
+							<td>23</td>
+							<td>lucas@email.com</td>
+						</tr>
+						<tr>
+							<td>Marcos</td>
+							<td>18</td>
+							<td>marcos@email.com</td>
+						</tr>
+						<tr>
+							<td>Julia</td>
+							<td>27</td>
+							<td>julia@email.com</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+
+		<div class="row-m">
+			<div class="col-12">
+				<div class="code-box code-box-margin">
+					<span class="title">Tabela<i>Copiar</i></span>
+<pre><code>&lt;<span class="tag">table</span> <span class="class">class</span>=<span class="valor">"table"</span>&gt;
+   &lt;<span class="tag">thead</span>&gt;
+      &lt;<span class="tag">tr</span>&gt;
+         &lt;<span class="tag">th</span>&gt; Nome &lt;/<span class="tag">th</span>&gt;
+         &lt;<span class="tag">th</span>&gt; Idade &lt;/<span class="tag">th</span>&gt;
+         &lt;<span class="tag">th</span>&gt; Email &lt;/<span class="tag">th</span>&gt;
+      &lt;/<span class="tag">tr</span>&gt;
+   &lt;/<span class="tag">thead</span>&gt;
+   &lt;<span class="tag">tbody</span>&gt;
+      &lt;<span class="tag">tr</span>&gt;
+         &lt;<span class="tag">td</span>&gt; Lucas &lt;/<span class="tag">th</span>&gt;
+         &lt;<span class="tag">th</span>&gt; 23 &lt;/<span class="tag">th</span>&gt;
+         &lt;<span class="tag">th</span>&gt; lucas@email.com &lt;/<span class="tag">th</span>&gt;
+      &lt;/<span class="tag">tr</span>&gt;
+      [...]
+   &lt;/<span class="tag">tbody</span>&gt;
+&lt;/<span class="tag">table</span>&gt;</code></pre>
+				</div>
+			</div>
+		</div>		
+	</section>
+	<!-- Table -->
+
+	<!--Button -->
+	<section id="button" class="element">
+		<div class="row-m">
+			<div class="col12">
+				<article>
+					<h5>Botões</h5>
+					<p>Pellentesque vel tempor neque. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Ut eu orci sit amet massa hendrerit sollicitudin mattis et mi.</p>
+				</article>
+			</div>
+		</div>
+
+		<div class="row-m">
+			<div class="col-12">
+				<a class="button" href="javascript:void(0);">Link</a>
+				<button>Elemento</button>
+				<input type="submit" value="submit input">
+				<input type="button" value="button input">
+				<input type="reset" value="reset input"><br>
+				<a class="button button-primary" href="javascript:void(0);">Link</a>
+				<button class="button-primary">Elemento</button>
+				<input class="button-primary" type="submit" value="Submit input">
+				<input class="button-primary" type="button" value="button input">
+				<input class="button-primary" type="reset" value="reset input">
+			</div>
+		</div>
+
+		<div class="row-m">
+			<div class="col-12">
+				<div class="code-box code-box-margin">
+					<span class="title">Botões<i>Copiar</i></span>
+<pre><code>&lt;<span class="tag">a</span> <span class="class">class</span>=<span class="valor">"button"</span> <span class="class">href</span>=<span class="valor">"#"</span>&gt; Link &lt;/<span class="tag">a</span>&gt;
+&lt;<span class="tag">button</span>&gt; Elemento &lt;/<span class="tag">button</span>&gt;
+&lt;<span class="tag">input</span> <span class="class">type</span>=<span class="valor">"submit"</span> <span class="class">value</span>=<span class="valor">"submit input"</span>&gt;
+&lt;<span class="tag">input</span> <span class="class">type</span>=<span class="valor">"button"</span> <span class="class">value</span>=<span class="valor">"button input"</span>&gt;
+&lt;<span class="tag">input</span> <span class="class">type</span>=<span class="valor">"reset"</span> <span class="class">value</span>=<span class="valor">"reset input"</span>&gt;</code></pre>
+				</div>
+			</div>			
+		</div>
+
+	</section>
+	<!-- Button -->
+</div>
+</section>
+
+<footer>
+	<section>
+		<span>Acompanhe o projeto no <a href="javascript:void(0);"><img src="resources/img/git-w.png" /></a></span>
+	</section>
+</footer>
+
+
+</body>
+<script src="resources/js/jquery.min.js"></script>
+<script src="resources/js/scripts-elements.js"></script>
+<script src="resources/js/scripts-menu.js"></script>
+</html>
