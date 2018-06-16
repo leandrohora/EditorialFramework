@@ -1,6 +1,6 @@
 # EditorialFramework
 
-![alt text](https://raw.githubusercontent.com/username/projectname/branch/path/to/img.png)
+![alt text](https://cdn.rawgit.com/leandrohora/EditorialFramework/gh-pages/capa.png)
 
 ## Framework de front-end para desenvolvimento rápido e intuitivo de sites editoriais
 
