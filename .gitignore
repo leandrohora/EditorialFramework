@@ -1,6 +1,7 @@
 # ignora arquivos indesejados
 .DS_Store
 DS_Store
+package-lock.json
 
 # ignora pacotes do node (dependências do grunt/gulp)
 node_modules/
