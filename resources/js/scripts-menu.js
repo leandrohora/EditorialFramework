@@ -2,7 +2,6 @@ jQuery(document).ready(function(){
 	
 	jQuery(window).scroll(function(){
 		var distanciaTopo = jQuery(this).scrollTop();
-		console.log(distanciaTopo);
 		
 		// Menu Principal
 		if (distanciaTopo >= 100) {

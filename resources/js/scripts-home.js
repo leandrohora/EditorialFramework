@@ -18,7 +18,6 @@ jQuery(document).ready(function(){
 	
 	jQuery(window).scroll(function(){
 		var distanciaTopo = jQuery(this).scrollTop();
-		console.log(distanciaTopo);
 		
 		// Menu Principal
 		if (distanciaTopo >= 100) {
@@ -31,6 +30,7 @@ jQuery(document).ready(function(){
 			jQuery("header .content").removeClass("active");
 			jQuery("#intro-wrapper").removeClass("active");
 		}
+
 		// Menu Principal
 
 		// Menu FLutuante Home
@@ -50,15 +50,16 @@ jQuery(document).ready(function(){
 			jQuery(".floating-nav-wrapper .estrutura-item").addClass("active");
 		}
 
-		if (distanciaTopo >= componentes-120) {
-			jQuery(".floating-nav-wrapper a").removeClass("active");
-			jQuery(".floating-nav-wrapper .componentes-item").addClass("active");
-		}
-
 		if (distanciaTopo >= template-120) {
 			jQuery(".floating-nav-wrapper a").removeClass("active");
 			jQuery(".floating-nav-wrapper .template-item").addClass("active");
 		}
+
+		if (distanciaTopo >= componentes-200) {
+			jQuery(".floating-nav-wrapper a").removeClass("active");
+			jQuery(".floating-nav-wrapper .componentes-item").addClass("active");
+		}
+
 		// Menu FLutuante Home
 	});
 
@@ -82,34 +83,11 @@ jQuery(document).ready(function(){
 		goScroll(".template");
 	});	
 
-
-
-	// Table
-	jQuery(".table-button").click(function(){
-		goScroll("");
-	});
-
-	jQuery(".table-button.s").click(function(){
-		jQuery(".table").toggleClass("table-striped");
-	});
-
-	jQuery(".table-button.h").click(function(){
-		jQuery(".table").toggleClass("table-hover");
-	});
-
-	jQuery(".table-button.b").click(function(){
-		jQuery(".table").toggleClass("table-border");
-	});
-
-	jQuery(".table-button.c").click(function(){
-		jQuery(".table").toggleClass("table-condenced");
-	});
-
 	// Utils
 	function goScroll (el){
 	    jQuery('html, body').animate({
 	        scrollTop: jQuery(el).offset().top-120
-	    }, 200);
+	    }, 500);
 	}
 
 });

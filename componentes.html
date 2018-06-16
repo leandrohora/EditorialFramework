@@ -3,6 +3,22 @@
 <head>
 	<meta charset="utf-8" />
 	<title>Editorial Framework</title>
+
+	<link rel="canonical" href="https://leandrohora.github.io/EditorialFramework/" />
+	<meta name="robots" content="index, follow" />
+	<meta name="description" content="Framework de front-end para desenvolvimento rápido e intuitivo de sites editoriais"/>
+	<meta name="keywords" content="framework, editorial, design, grid, responsiv, web design" />
+	<meta property="og:type" content="website" />
+
+	<!--Facebook:-->
+	<meta property="og:title" content="Editorial Framework"/>
+	<meta property="og:type" content="article" />
+	<meta property="og:url" content="https://leandrohora.github.io/EditorialFramework/" />
+	<meta property="og:description" content="Framework de front-end para desenvolvimento rápido e intuitivo de sites editoriais" />
+	<meta property="og:image" content="https://leandrohora.github.io/EditorialFramework/capa.jpg" />
+	<!--:Facebook-->
+
+
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="resources/css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="resources/css/framework.css">
@@ -24,7 +40,6 @@
 						<a class="logo" href="index.html">Editorial Framework</a>
 					</div>
 					<nav class="menu-wrapper">
-						<a href="index.html" class="menu-item">começando</a>
 						<a href="componentes.html" class="menu-item">componentes</a>
 					</nav>
 				</div>
@@ -42,7 +57,7 @@
 			<div class="col-12">
 				<article>
 					<h5>Sistema de grid</h5>
-					<p>Pellentesque vel tempor neque. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Ut eu orci sit amet massa hendrerit sollicitudin mattis et mi. Pellentesque vel tempor neque.</p>	
+					<p>O sistema é composto por três grids que reajustam a largura e a quantidade de blocos de acordo com medidas específicas definidas pelo Framework. O reajuste posiciona os blocos em sobreposição e define largura de 100% para todos os blocos independentes de sua quantidade de colunas. Os sistemas foram definidos como: Large, Medium, Small.</p>
 				</article>
 			</div>
 		</div>
@@ -101,11 +116,22 @@
 				</div>			
 			</div>
 		</div>
+
+
+		<div class="row-m">
+			<div class="col-12">
+				<article>
+					<p>O reajuste do grid é feito apenas quando a largura máxima do navegador for menor que 768px. Caso contrário a forma do grid se mantém, independente do sistema de utilizado.</p>
+					<p>No sistema Large o reajuste do grid é feito quando a largura máxima do navegador for menor que 768px, no sistema Medium quando a largura máxima do navegador for menor que 640px e no sistema Small quando a largura máxima do navegador for menor que 480px.</p>
+				</article>
+			</div>
+		</div>
+
 		<div class="code-wrapper">
 			<div class="row-m">
 				<div class="col-6">
 					<div class="code-box">
-						<span class="title">Normal - <span class="subtitle">Largura máxima: 100%</span><i>Copiar</i></span>
+						<span class="title">Normal - <span class="subtitle">Largura máxima: 100%</span></span>
 <pre><code>&lt;<span class="tag">div</span> <span class="class">class</span>=<span class="valor">"row"</span>&gt;
    &lt;<span class="tag">div</span> <span class="class">class</span>=<span class="valor">"col-1"</span>&gt; ... &lt;/<span class="tag">div</span>&gt;
    &lt;<span class="tag">div</span> <span class="class">class</span>=<span class="valor">"col-11"</span>&gt; ... &lt;/<span class="tag">div</span>&gt;		
@@ -114,7 +140,7 @@
 				</div>
 				<div class="col-6">
 					<div class="code-box">
-						<span class="title">Small - <span class="subtitle">Largura máxima: 400px</span> <i>Copiar</i></span>
+						<span class="title">Small - <span class="subtitle">Largura máxima: 400px</span> </span>
 <pre><code>&lt;<span class="tag">div</span> <span class="class">class</span>=<span class="valor">"row-s"</span>&gt;
    &lt;<span class="tag">div</span> <span class="class">class</span>=<span class="valor">"col-1"</span>&gt; ... &lt;/<span class="tag">div</span>&gt;
    &lt;<span class="tag">div</span> <span class="class">class</span>=<span class="valor">"col-11"</span>&gt; ... &lt;/<span class="tag">div</span>&gt;		
@@ -125,7 +151,7 @@
 			<div class="row-m">
 				<div class="col-6">
 					<div class="code-box">
-						<span class="title">Medium - <span class="subtitle">Largura máxima: 550px</span> <i>Copiar</i></span>
+						<span class="title">Medium - <span class="subtitle">Largura máxima: 550px</span> </span>
 <pre><code>&lt;<span class="tag">div</span> <span class="class">class</span>=<span class="valor">"row-m"</span>&gt;
    &lt;<span class="tag">div</span> <span class="class">class</span>=<span class="valor">"col-1"</span>&gt; ... &lt;/<span class="tag">div</span>&gt;
    &lt;<span class="tag">div</span> <span class="class">class</span>=<span class="valor">"col-11"</span>&gt; ... &lt;/<span class="tag">div</span>&gt;		
@@ -134,7 +160,7 @@
 				</div>
 				<div class="col-6">
 					<div class="code-box">
-						<span class="title">Large - <span class="subtitle">Largura máxima: 750px</span> <i>Copiar</i></span>
+						<span class="title">Large - <span class="subtitle">Largura máxima: 750px</span> </span>
 <pre><code>&lt;<span class="tag">div</span> <span class="class">class</span>=<span class="valor">"row-l"</span>&gt;
    &lt;<span class="tag">div</span> <span class="class">class</span>=<span class="valor">"col-1"</span>&gt; ... &lt;/<span class="tag">div</span>&gt;
    &lt;<span class="tag">div</span> <span class="class">class</span>=<span class="valor">"col-11"</span>&gt; ... &lt;/<span class="tag">div</span>&gt;		
@@ -152,10 +178,10 @@
 			<div class="col-6">
 				<article>
 					<h5>Títulos</h5>
-					<p>Pellentesque vel tempor neque. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Ut eu orci sit amet massa hendrerit sollicitudin mattis et mi. Pellentesque vel tempor neque.</p>
+					<p>Os estilos de CSS para os títulos são aplicados nas tags h1 a h6, podendo ser aplicados também com as classes .h1 a .h2 em qualquer tag que comporte conteúdo de texto.</p>
 				</article>
 				<div class="code-box">
-					<span class="title">Títulos<i>Copiar</i></span>
+					<span class="title">Títulos</span>
 <pre><code>&lt;<span class="tag">h1</span>&gt;Legibilidade&lt;/<span class="tag">h1</span>&gt;
 &lt;<span class="tag">h2</span>&gt;Legibilidade&lt;/<span class="tag">h2</span>&gt;
 &lt;<span class="tag">h3</span>&gt;Legibilidade&lt;/<span class="tag">h3</span>&gt;
@@ -184,16 +210,16 @@
 			<div class="col-6">
 				<article>
 					<h5>Recuo</h5>
-					<p class="rec">Pellentesque vel tempor neque. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Ut eu orci sit amet massa hendrerit sollicitudin mattis et mi. Pellentesque vel tempor neque.</p>
+					<p class="rec">A indentação é aplicada nos elementos que comportam conteúdo de texto, utilizando a classe .rec, referente ao recuo do texto em relação à margem.</p>
 				</article>
 			</div>
 			<div class="col-6">
 				<div class="code-box">
-					<span class="title">Recuo<i>Copiar</i></span>
-<pre><code>&lt;<span class="tag">p</span> <span class="class">class</span>=<span class="valor">"rec"</span>&gt; Pellentesque vel tempor
-neque. Vestibulum ante ipsum primis in
-faucibus orci luctus et ultrices posuere
-cubilia Curae... &lt;/<span class="tag">p</span>&gt;</code></pre>
+					<span class="title">Recuo</span>
+<pre><code>&lt;<span class="tag">p</span> <span class="class">class</span>=<span class="valor">"rec"</span>&gt; A indentação é aplicada
+nos elementos que comportam conteúdo
+de texto, utilizando a classe .rec,
+referente ao recuo... &lt;/<span class="tag">p</span>&gt;</code></pre>
 				</div>
 			</div>
 		</div>		
@@ -206,16 +232,15 @@ cubilia Curae... &lt;/<span class="tag">p</span>&gt;</code></pre>
 			<div class="col-6">
 				<article>
 					<h5>Captular</h5>
-					<p class="cap">Pellentesque vel tempor neque. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Ut eu orci sit amet massa hendrerit sollicitudin mattis et mi. Pellentesque vel tempor neque.</p>
+					<p class="cap">O capitular também é aplicado nos elementos que comportam conteúdo de texto, utilizando a classe .cap.</p>
 				</article>
 			</div>
 			<div class="col-6">
 				<div class="code-box">
-					<span class="title">Captular<i>Copiar</i></span>
-<pre><code>&lt;<span class="tag">p</span> <span class="class">class</span>=<span class="valor">"cap"</span>&gt; Pellentesque vel tempor
-neque. Vestibulum ante ipsum primis in
-faucibus orci luctus et ultrices posuere
-cubilia Curae... &lt;/<span class="tag">p</span>&gt;</code></pre>
+					<span class="title">Captular</span>
+<pre><code>&lt;<span class="tag">p</span> <span class="class">class</span>=<span class="valor">"cap"</span>&gt; O capitular também é aplicado
+nos elementos que comportam conteúdo de texto,
+utilizando... &lt;/<span class="tag">p</span>&gt;</code></pre>
 				</div>
 			</div>
 		</div>		
@@ -229,15 +254,15 @@ cubilia Curae... &lt;/<span class="tag">p</span>&gt;</code></pre>
 			<div class="col-6">
 				<article>
 					<h5>Olho</h5>
-					<p class="eye">Pellentesque vel tempor neque. Vestibulum ante ipsum primis in faucibus orci luctus.</p>
+					<p class="eye">O olho é aplicado especificamente no elemento de parágrafo, utilizando a classe .eye</p>
 				</article>
 			</div>
 			<div class="col-6">
 				<div class="code-box">
-					<span class="title">Olho<i>Copiar</i></span>
-<pre><code>&lt;<span class="tag">p</span> <span class="class">class</span>=<span class="valor">"eye"</span>&gt; Pellentesque vel tempor
-neque. Vestibulum ante ipsum primis in
-faucibus. &lt;/<span class="tag">p</span>&gt;</code></pre>
+					<span class="title">Olho</span>
+<pre><code>&lt;<span class="tag">p</span> <span class="class">class</span>=<span class="valor">"eye"</span>&gt; O olho é aplicado
+especificamente no elemento de parágrafo,
+utilizando... &lt;/<span class="tag">p</span>&gt;</code></pre>
 				</div>
 			</div>
 		</div>		
@@ -250,12 +275,12 @@ faucibus. &lt;/<span class="tag">p</span>&gt;</code></pre>
 			<div class="col-6">
 				<article>
 					<h5>Alinhamento</h5>
-					<p>Pellentesque vel tempor neque. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Ut eu orci sit amet massa hendrerit sollicitudin mattis et mi.</p>
+					<p>O alinhamento de texto pode ser aplicado em qualquer elemento que comporta conteúdo de texto com as classes .text-left; .text-right; .text-center;  e a classe .text-justfy.</p>
 				</article>
 			</div>
 			<div class="col-6">
 				<div class="code-box">
-					<span class="title">Alinhamento<i>Copiar</i></span>
+					<span class="title">Alinhamento</span>
 <pre><code>&lt;<span class="tag">p</span> <span class="class">class</span>=<span class="valor">"text-left"</span>&gt; ... &lt;/<span class="tag">p</span>&gt;
 &lt;<span class="tag">p</span> <span class="class">class</span>=<span class="valor">"text-right"</span>&gt; ... &lt;/<span class="tag">p</span>&gt;
 &lt;<span class="tag">p</span> <span class="class">class</span>=<span class="valor">"text-center"</span>&gt; ... &lt;/<span class="tag">p</span>&gt;
@@ -273,12 +298,12 @@ faucibus. &lt;/<span class="tag">p</span>&gt;</code></pre>
 			<div class="col-6">
 				<article>
 					<h5>Peso</h5>
-					<p>Pellentesque vel tempor neque. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Ut eu orci sit amet massa hendrerit sollicitudin mattis et mi.</p>
+					<p>O peso é utilizado em qualquer elemento que comporta conteúdo de texto com a classe .bolder, aplicando o peso bold; a classe .normal, aplicando o peso padrão e a classe .lighter, aplicando o peso light.</p>
 				</article>
 			</div>
 			<div class="col-6">
 				<div class="code-box">
-					<span class="title">Peso<i>Copiar</i></span>
+					<span class="title">Peso</span>
 <pre><code>&lt;<span class="tag">span</span> <span class="class">class</span>=<span class="valor">"bolder"</span>&gt; bolder &lt;/<span class="tag">span</span>&gt;
 &lt;<span class="tag">span</span> <span class="class">class</span>=<span class="valor">"normal"</span>&gt; normal &lt;/<span class="tag">span</span>&gt;
 &lt;<span class="tag">span</span> <span class="class">class</span>=<span class="valor">"lighter"</span>&gt; lighter &lt;/<span class="tag">span</span>&gt;
@@ -295,7 +320,7 @@ faucibus. &lt;/<span class="tag">p</span>&gt;</code></pre>
 			<div class="col-6">
 				<article>
 					<h5>Formulários</h5>
-					<p>Pellentesque vel tempor neque. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Ut eu orci sit amet massa hendrerit sollicitudin mattis et mi.</p>
+					<p>Os estilos para formulário são aplicados nos elementos de input (elementos de entrada de dados) como email, número, pesquisa, texto, telefone, link e senha.</p>
 				</article>
 			</div>
 
@@ -324,7 +349,7 @@ faucibus. &lt;/<span class="tag">p</span>&gt;</code></pre>
 		<div class="row-m">
 			<div class="col-12">
 				<div class="code-box code-box-margin">
-					<span class="title">Formulário<i>Copiar</i></span>
+					<span class="title">Formulário</span>
 <pre><code>&lt;<span class="tag">form</span>&gt;
    &lt;<span class="tag">div</span> <span class="class">class</span>=<span class="valor">"row-s"</span>&gt;
       &lt;<span class="tag">div</span> <span class="class">class</span>=<span class="valor">"col-6"</span>&gt;
@@ -356,7 +381,7 @@ faucibus. &lt;/<span class="tag">p</span>&gt;</code></pre>
 			<div class="col-12">
 				<article>
 					<h5>Tabelas</h5>
-					<p>Pellentesque vel tempor neque. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Ut eu orci sit amet massa hendrerit sollicitudin mattis et mi.</p>
+					<p>A tabela, além do estilo padrão, apresenta quatro variações de estilo que podem ser aplicadas de acordo com as necessidades de cada projeto. As variações são: tabela listrada, tabela com hover, tabela com borda e tabela condensada. O estilo padrão é aplicado no elemento de tabela com a classe .table.</p>
 				</article>
 			</div>
 		</div>
@@ -402,8 +427,9 @@ faucibus. &lt;/<span class="tag">p</span>&gt;</code></pre>
 		<div class="row-m">
 			<div class="col-12">
 				<div class="code-box code-box-margin">
-					<span class="title">Tabela<i>Copiar</i></span>
-<pre><code>&lt;<span class="tag">table</span> <span class="class">class</span>=<span class="valor">"table"</span>&gt;
+					<span class="title">Tabela</span>
+<pre><code>&lt;<span class="tag">table</span>
+  <span class="class">class</span>=<span class="valor">"table<span class="classStriped"> table-striped</span><span class="classHover"> table-hover</span><span class="classBorder"> table-border</span><span class="classCondenced"> table-condenced</span>"</span>&gt;
    &lt;<span class="tag">thead</span>&gt;
       &lt;<span class="tag">tr</span>&gt;
          &lt;<span class="tag">th</span>&gt; Nome &lt;/<span class="tag">th</span>&gt;
@@ -432,7 +458,7 @@ faucibus. &lt;/<span class="tag">p</span>&gt;</code></pre>
 			<div class="col12">
 				<article>
 					<h5>Botões</h5>
-					<p>Pellentesque vel tempor neque. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Ut eu orci sit amet massa hendrerit sollicitudin mattis et mi.</p>
+					<p>Os botões apresentam um estilo padrão e uma variação. O estilo padrão é aplicado pela classe .button e também diretamente nos elementos de input e button. A variação é aplicada com a classe .button-primary.</p>
 				</article>
 			</div>
 		</div>
@@ -455,7 +481,7 @@ faucibus. &lt;/<span class="tag">p</span>&gt;</code></pre>
 		<div class="row-m">
 			<div class="col-12">
 				<div class="code-box code-box-margin">
-					<span class="title">Botões<i>Copiar</i></span>
+					<span class="title">Botões</span>
 <pre><code>&lt;<span class="tag">a</span> <span class="class">class</span>=<span class="valor">"button"</span> <span class="class">href</span>=<span class="valor">"#"</span>&gt; Link &lt;/<span class="tag">a</span>&gt;
 &lt;<span class="tag">button</span>&gt; Elemento &lt;/<span class="tag">button</span>&gt;
 &lt;<span class="tag">input</span> <span class="class">type</span>=<span class="valor">"submit"</span> <span class="class">value</span>=<span class="valor">"submit input"</span>&gt;
@@ -472,7 +498,7 @@ faucibus. &lt;/<span class="tag">p</span>&gt;</code></pre>
 
 <footer>
 	<section>
-		<span>Acompanhe o projeto no <a href="javascript:void(0);"><img src="resources/img/git-w.png" /></a></span>
+		<span>Veja o projeto no <a href="https://github.com/leandrohora/EditorialFramework" target="_blank"><img src="resources/img/git-w.png" /></a></span>
 	</section>
 </footer>
 

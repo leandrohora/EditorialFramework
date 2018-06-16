@@ -58,6 +58,9 @@ header .content .logo-wrapper .logo{
     font-size: 20px;
     text-decoration: none;   
 }
+header .content .logo-wrapper .logo.home{
+    pointer-events: none;  
+}
 /*Menu*/
 header .content .menu-wrapper{
     display: table-cell;
@@ -183,6 +186,11 @@ header .content .menu-wrapper .menu-item{
 .starting-item p{
     font-weight: 300;
 }
+.starting-item a{
+    color: #000;
+    font-weight: 400;
+    text-decoration: none;
+}
 .starting-item h2{
     font-size: 2.5rem;
 }
@@ -200,6 +208,9 @@ header .content .menu-wrapper .menu-item{
     overflow: auto;
 }
 .starting-item .template-inicial-wrapper{
+    margin-bottom: 20px;
+}
+.starting-item .componentes-wrapper{
     margin-bottom: 20px;
 }
 .starting-item .componentes-wrapper ul{
@@ -369,9 +380,16 @@ header .content .menu-wrapper .menu-item{
     color: #fff;
     background: #000;
 }
-.table-button-active{
+.table-button.active{
     color: #fff;
     background: #000;
+}
+
+.classStriped,
+.classHover,
+.classBorder,
+.classCondenced{
+    display: none;
 }
 /*Select table*/
 /*Table*/
@@ -437,22 +455,25 @@ footer section img{
 pre{
 	padding: 10px 20px;
 	font-size: 1.5rem;
-	overflow: hidden;
 }
 code{
 	white-space: pre;
 	word-wrap: break-word;
-	font-family: 'Ubuntu Mono', monospace;
+    color: #000;
 }
-/*code .tag{
-	color: #ffb500;
+code .tag{
+	color: #000;
 }
 code .class{
-    color: #97cd2b;
+    color: #82a01c;
 }
 code .valor{
-    color: #ddd56d;
-}*/
+    color: #ce1c1c;
+}
+.comment{
+    color: #999;
+}
+
 /*Code*/
 
 
@@ -479,10 +500,7 @@ code .valor{
         padding: 70px 10px 40px 10px;
     }
     .floating-nav-wrapper{
-        width: 100%;  
+        display: none;
     }
-    .floating-nav-wrapper.active{
-        position: relative;
-        top: 0;
-    }
+
 }

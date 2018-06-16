@@ -1,23 +1,23 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <!DOCTYPE html>
 <html>
 <head>
 	<meta charset="utf-8" />
 	<title>Editorial Framework</title>
+
+	<link rel="canonical" href="https://leandrohora.github.io/EditorialFramework/" />
+	<meta name="robots" content="index, follow" />
+	<meta name="description" content="Framework de front-end para desenvolvimento rápido e intuitivo de sites editoriais"/>
+	<meta name="keywords" content="framework, editorial, design, grid, responsiv, web design" />
+	<meta property="og:type" content="website" />
+
+	<!--Facebook:-->
+	<meta property="og:title" content="Editorial Framework"/>
+	<meta property="og:type" content="article" />
+	<meta property="og:url" content="https://leandrohora.github.io/EditorialFramework/" />
+	<meta property="og:description" content="Framework de front-end para desenvolvimento rápido e intuitivo de sites editoriais" />
+	<meta property="og:image" content="https://leandrohora.github.io/EditorialFramework/capa.jpg" />
+	<!--:Facebook-->
+
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="resources/css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="resources/css/framework.css">
@@ -36,7 +36,7 @@
 			<div class="col-12">
 				<div class="content">
 					<div class="logo-wrapper">
-						<a class="logo" href="index.html">Editorial Framework</a>
+						<a class="logo home" href="javascript:void(0);">Editorial Framework</a>
 					</div>
 					<nav class="menu-wrapper">
 						<a href="javascript:void(0);" class="menu-item comecando-item">começando</a>
@@ -55,7 +55,7 @@
 		<div class="row-m">
 			<div class="col-12">
 				<h1>Framework de front-end para desenvolvimento<br>rápido e intuitivo de sites editoriais</h1>
-				<a href="" class="btn-download">download</a>
+				<a href="javascript:void(0);" class="btn-download comecando-item">download</a>
 			</div>
 		</div>
 	</div>	
@@ -84,7 +84,7 @@
 						<div class="col-4">
 							<div class="item-box">
 								<img src="resources/img/ui.png">
-								<p>Componentes de interface do usuário</p>
+								<p>Componentes de interface gráfica do usuário</p>
 							</div>
 						</div>
 					</div>
@@ -103,7 +103,7 @@
 				<div class="question">
 					<article>
 						<h2>Por que usar o Editorial Framework?</h2>
-						<p>O Editorial Framework é uma ferramenta de front-end que possibilita um desenvolvimento rápido e intuitivo de sites editoriais com uma gama de elementos de inteface disponíveis para construção de layouts.</p>
+						<p>O Editorial Framework é uma ferramenta de front-end que possibilita um desenvolvimento rápido e intuitivo de sites editoriais com uma gama de elementos de inteface e um sistema de grid responsivo.</p>
 					</article>
 				</div>
 			</div>
@@ -113,7 +113,7 @@
 <!-- Question -->
 
 <!-- Começando -->
-<section class="starting-wrapper">
+<section class="starting-wrapper" id="starting-wrapper">
 	<div class="container">
 
 		<div class="starting-item comecando">
@@ -121,19 +121,21 @@
 				<div class="col-12">
 					<article>
 						<h2>Começando com Editorial Framework</h2>
-						<p>Pellentesque vel tempor neque. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Ut eu orci sit amet massa hendrerit sollicitudin mattis et mi.</p>
+						<p>Para começar de forma rápida, basta adicionar o Editorial Framework já compilado em seu projeto, fazendo o <a href="Editorial-Framework-1.0.0.zip">download</a> ou utilizado o link em <a href="https://cdn.rawgit.com/leandrohora/EditorialFramework/e065caf9/css/editorial-framework.min.css" target="_blank">CDN</a>. Abaixo seguem  mais opções de download e instruções de implementação.</p>
+						
 					</article>
 				</div>
 			</div>
+
 		</div>
 
 		<div class="row-l">
 			<div class="col-3">
 				<ul class="floating-nav-wrapper">
 					<a class="download-item" href="javascript:void(0);">Download</a>
-					<a class="estrutura-item" href="javascript:void(0);">Estrutura de arquivos</a>
-					<a class="componentes-item" href="javascript:void(0);">Componentes</a>
+					<a class="estrutura-item" href="javascript:void(0);">Estrutura de arquivos</a>					
 					<a class="template-item" href="javascript:void(0);">Template inicial HTML</a>
+					<a class="componentes-item" href="javascript:void(0);">Componentes</a>
 				</ul>.
 			</div>
 
@@ -148,13 +150,13 @@
 					<div class="row-m">
 						<div class="col-6">
 							<article>
-								<p><b>Download compilado:</b> Aqui você pode fazer o download do Editorial Framework já compilado e pronto para ser utilizadao de maneira simples em seu projeto. É a maneira mais fácilde começar!</p>
-								<a class="button button-primary" href="#"> Download </a>
+								<p><b>Download compilado:</b> Aqui você pode fazer o download do Editorial Framework pronto para ser utilizado de maneira simples em seu projeto. É a forma mais fácil de começar!</p>
+								<a class="button button-primary" href="Editorial-Framework-1.0.0.zip"> Download</a>
 							</article>
 						</div>
 						<div class="col-6">
-							<article>								
-								<p><b>Download fonte: </b>Também diponibilzamos o download do código fonte do Editorial Framework, está disponível no GitHub. Contribua com o projeto!</p>
+							<article>
+								<p><b>Download fonte: </b>Também é possível o download do código fonte do Editorial Framework, está disponível no GitHub. Faça o download!</p>
 								<a class="button button-primary" target="_blank" href="https://github.com/leandrohora/EditorialFramework"> Download </a>
 							</article>
 						</div>					
@@ -166,7 +168,7 @@
 						<div class="col-12">
 							<article>
 								<h5 class="estrutura">Estrutura de arquivos</h5>
-								<p>Pellentesque vel tempor neque. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Ut eu orci sit amet massa hendrerit sollicitudin mattis et mi.</p>
+								<p>A seguir temos um exemplo da forma mais simples de implementação da estrutura de arquivos para se iniciar um novo projeto, utilizando o Editorial Framework.</p>
 								<div class="img-wrapper">
 									<img src="resources/img/path.svg">
 								</div>
@@ -179,8 +181,49 @@
 					<div class="row-l">
 						<div class="col-12">
 							<article>
+
+								<h5 class="template">Template inicial HTML</h5>
+								
+								<p>Copie e cole o arquivo de estilo <link> dentro da sua <head> antes de todos os outros arquivos de estilo para carregar nosso CSS.</p>
+								
+								<div class="code-box">
+<pre><code>&lt;<span class="tag">link</span> <span class="class">rel</span>=<span class="valor">"stylesheet"</span> <span class="class">href</span>=<span class="valor">"https://cdn.rawgit.com/leandrohora/EditorialFramework/e065caf9/css/editorial-framework.min.css"</span>&gt;
+</code></pre>
+								</div>
+								
+								<p>É importante a utilização da meta tag viewport para garantir o funcionamento responsivo do sistema de grid. Com isto, a página deve ficar da seguinte forma:</p>
+
+								
+								<div class="code-box">
+<pre><code>&lt;!<span class="tag">DOCTYPE</span> html&gt;
+&lt;<span class="tag">html</span> <span class="class">lang</span>=<span class="valor">"pt-br</span>"&gt;
+  &lt;<span class="tag">head</span>&gt;
+    &lt;<span class="tag">title</span>&gt;Olá, mundo!&lt;/title&gt;
+    <span class="comment">&lt;!-- Meta tags Obrigatórias --&gt;</span>
+    &lt;<span class="tag">meta</span> <span class="class">charset</span>=<span class="valor">"utf-8"</span>&gt;
+    &lt;<span class="tag">meta</span> <span class="class">name</span>=<span class="valor">"viewport"</span> <span class="class">content</span>=<span class="valor">"width>=device-width, initial-scale=1"</span>&gt;
+    <span class="comment">&lt;!-- Editorial Framework CSS --&gt;</span>
+    &lt;<span class="tag">link</span> <span class="class">rel</span>=<span class="valor">"stylesheet" href="https://cdn.rawgit.com/leandrohora/EditorialFramework/e065caf9/css/editorial-framework.min.css"</span>&gt;
+  &lt;<span class="tag">/head</span>&gt;
+  &lt;body&gt;
+    &lt;<span class="tag">h1</span>&gt;Olá, mundo!&lt;<span class="tag">/h1</span>&gt;
+  &lt;<span class="tag">/body</span>&gt;
+&lt;<span class="tag">/html</span>&gt;
+</code></pre>
+								</div>
+								
+							</article>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="starting-item">
+					<div class="row-l">
+						<div class="col-12">
+							<article>
 								<h5 class="componentes">Componentes</h5>
-								<p>Pellentesque vel tempor neque. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Ut eu orci sit amet massa hendrerit sollicitudin mattis et mi.</p>
+								<p>Para estruturação de layouts de sites o Editorial Framework disponibilizada um conjunto de componentes úteis que seguem:</p>
 								<div class="componentes-wrapper">
 									<ul>
 										<li>Sistema de grid</li>
@@ -194,93 +237,19 @@
 										<li>Tabelas</li>
 										<li>Botões</li>
 									</ul>
-								</div>								
-							</article>
-						</div>
-					</div>
-				</div>
-
-				<div class="starting-item">
-					<div class="row-l">
-						<div class="col-12">
-							<article>
-								<h5 class="template">Template inicial HTML</h5>
-								<p>Pellentesque vel tempor neque. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Ut eu orci sit amet massa hendrerit sollicitudin mattis et mi.</p><div class="template-inicial-wrapper">
-
-									<div class="code-box">
-						<span class="title">Medium - <span class="subtitle">Largura máxima: 550px</span> <i>Copiar</i></span>
-<pre><code>&lt;<span class="tag">div</span> <span class="class">class</span>=<span class="valor">"row-m"</span>&gt;
-   &lt;<span class="tag">div</span> <span class="class">class</span>=<span class="valor">"col-1"</span>&gt; ... &lt;/<span class="tag">div</span>&gt;
-   &lt;<span class="tag">div</span> <span class="class">class</span>=<span class="valor">"col-11"</span>&gt; ... &lt;/<span class="tag">div</span>&gt;		
-&lt;/<span class="tag">div</span>&gt;</code></pre>
-									</div>
-
 								</div>	
-								<p>Pellentesque vel tempor neque. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Ut eu orci sit amet massa hendrerit sollicitudin mattis et mi.</p>
-								<div class="template-inicial-wrapper">
 
-									<div class="code-box">
-						<span class="title">Medium - <span class="subtitle">Largura máxima: 550px</span> <i>Copiar</i></span>
-<pre><code>&lt;<span class="tag">div</span> <span class="class">class</span>=<span class="valor">"row-m"</span>&gt;
-   &lt;<span class="tag">div</span> <span class="class">class</span>=<span class="valor">"col-1"</span>&gt; ... &lt;/<span class="tag">div</span>&gt;
-   &lt;<span class="tag">div</span> <span class="class">class</span>=<span class="valor">"col-11"</span>&gt; ... &lt;/<span class="tag">div</span>&gt;		
-&lt;/<span class="tag">div</span>&gt;</code></pre>
-									</div>
-									
-								</div>								
+								<a class="button button-primary"  href="componentes.html">Mais sobre os componentes </a>							
 							</article>
 						</div>
 					</div>
 				</div>
+
+
 
 			</div>
 
 		</div>
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
 
 	</div>			
 </section>
@@ -288,7 +257,7 @@
 
 <footer>
 	<section>
-		<span>Veja o projeto no <a href="javascript:void(0);"><img src="resources/img/git-w.png" /></a></span>
+		<span>Veja o projeto no <a href="https://github.com/leandrohora/EditorialFramework" target="_blank"><img src="resources/img/git-w.png" /></a></span>
 	</section>
 </footer>
 
