@@ -136,7 +136,7 @@
 					<a class="estrutura-item" href="javascript:void(0);">Estrutura de arquivos</a>					
 					<a class="template-item" href="javascript:void(0);">Template inicial HTML</a>
 					<a class="componentes-item" href="javascript:void(0);">Componentes</a>
-				</ul>.
+				</ul><span class="ponto">.</span>
 			</div>
 
 			<div class="col-9">
@@ -168,7 +168,7 @@
 						<div class="col-12">
 							<article>
 								<h5 class="estrutura">Estrutura de arquivos</h5>
-								<p>A seguir temos um exemplo da forma mais simples de implementação da estrutura de arquivos para se iniciar um novo projeto, utilizando o Editorial Framework.</p>
+								<p>A seguir temos um exemplo da forma mais simples de implementação da estrutura de arquivos para se iniciar um novo projeto.</p>
 								<div class="img-wrapper">
 									<img src="resources/img/path.svg">
 								</div>
@@ -184,13 +184,20 @@
 
 								<h5 class="template">Template inicial HTML</h5>
 								
-								<p>Copie e cole o arquivo de estilo <link> dentro da sua <head> antes de todos os outros arquivos de estilo para carregar nosso CSS.</p>
+								<p>Copie e cole o arquivo de estilo <code><span class="valor">&lt;link&gt;</span></code> dentro da sua <code><span class="valor">&lt;head&gt;</span></code> antes de todos os outros arquivos de estilo para carregar o CSS do o Editorial Framework:</p>
 								
+								<div class="code-box">
+<pre><code>&lt;<span class="tag">link</span> <span class="class">rel</span>=<span class="valor">"stylesheet"</span> <span class="class">href</span>=<span class="valor">"https://cdn.rawgit.com/leandrohora/EditorialFramework/e56c7b94/css/editorial-framework.css"</span>&gt;
+</code></pre>
+								</div>
+								
+								<p>Ou se preferir o CSS minificado:</p>
+
 								<div class="code-box">
 <pre><code>&lt;<span class="tag">link</span> <span class="class">rel</span>=<span class="valor">"stylesheet"</span> <span class="class">href</span>=<span class="valor">"https://cdn.rawgit.com/leandrohora/EditorialFramework/e065caf9/css/editorial-framework.min.css"</span>&gt;
 </code></pre>
 								</div>
-								
+
 								<p>É importante a utilização da meta tag viewport para garantir o funcionamento responsivo do sistema de grid. Com isto, a página deve ficar da seguinte forma:</p>
 
 								

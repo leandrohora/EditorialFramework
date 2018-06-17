@@ -223,6 +223,9 @@ header .content .menu-wrapper .menu-item{
     overflow: hidden;
     width: 190px;
 }
+.ponto{
+    color: transparent;
+}
 .floating-nav-wrapper a{
     text-decoration: none;
     display: block;
@@ -480,13 +483,24 @@ code .valor{
 
 /* Larger than mobile */
 @media (max-width: 400px) {
-    
+    header .content .logo-wrapper .logo{
+        font-size: 15px;
+    }
+    .title-wrapper .subtitle {
+        display: none;
+    }
 }
 
 /* Larger than phablet (also point when grid becomes active) */
 @media (max-width: 550px) {
+    #intro-wrapper h1 {
+        font-size: 2.4rem;
+        margin: 0 auto 50px auto;
+        width: 238px;
+    }
     .title-wrapper{
         padding-left: 0;
+        padding-top: 0;
     }
 }
 
@@ -502,5 +516,7 @@ code .valor{
     .floating-nav-wrapper{
         display: none;
     }
-
+    .starting-item.comecando{
+        margin-bottom: 0;
+    }
 }

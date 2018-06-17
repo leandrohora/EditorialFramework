@@ -1,7 +1,0 @@
-# ignora arquivos indesejados
-.DS_Store
-DS_Store
-
-# ignora pacotes do node (dependências do grunt/gulp)
-node_modules/
-
