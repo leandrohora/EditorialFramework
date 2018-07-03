@@ -10,8 +10,8 @@
 
 	<style type="text/css">
 		.thumb{
-			width: 150px;
-			height: 150px;
+			width: 130px;
+			height: 130px;
 			overflow: hidden;
 			display: inline-block;
 			position: relative;
@@ -22,6 +22,11 @@
 		    top: 0;
 		    width: 100%;
 		    height: 100%;
+		}
+		a{
+			text-decoration: none;
+			display: inline-block;
+			margin-right: 5px;
 		}
 	</style>
 
@@ -55,7 +60,8 @@
 			<div class="col-xs-12 col-sm-6 box-gif"></div>
 		</div>
 
-		<a href="whatsapp://send?text=https://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif">Compartilhar no Whatsapp</a>
+		<a href="whatsapp://send?text=Texto que vai ser compartilhado!" data-action="share/whatsapp/share">Compartilhar via Whatsapp</a>
+
 
 	</div>
 
@@ -82,7 +88,7 @@
 			gifs.done(function(data) { 
 				$(data.data).each(function (index, value){
 				  var idGif = data.data[index].id;
-				  var imgTag = '<span class="thumb"><img src="https://media.giphy.com/media/'+idGif+'/giphy.gif"></span>';
+				  var imgTag = '<a href="whatsapp://send?text=https://media.giphy.com/media/'+idGif+'/giphy.gif" data-action="share/whatsapp/share" ><span class="thumb"><img src="https://media.giphy.com/media/'+idGif+'/giphy.gif"></span></a>';
 				  $('.box-gif').append(imgTag);
 				});
 			});
