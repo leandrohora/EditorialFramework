@@ -76,7 +76,7 @@
 			jQuery('.thumb').remove();
 
 			var pesquisa = jQuery('.form-control').val(),
-				gifs = $.get("http://api.giphy.com/v1/gifs/search?q="+pesquisa+"&api_key=kqQeYs6K4qbduygJAQWE76b3QzkOtU5g&limit="+qtd);
+				gifs = $.get("https://api.giphy.com/v1/gifs/search?q="+pesquisa+"&api_key=kqQeYs6K4qbduygJAQWE76b3QzkOtU5g&limit="+qtd);
 				
 
 			gifs.done(function(data) { 
