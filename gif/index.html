@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Exemplo Knockout</title>
+	<link rel="stylesheet" type="text/css" href="../bootstrap-3.3.7.min.css">
+</head>
+<body>
+
+	<style type="text/css">
+		.thumb{
+			width: 150px;
+			height: 150px;
+			overflow: hidden;
+			display: inline-block;
+			position: relative;
+		}
+		.thumb img{
+			margin: 0;
+		    position: absolute;
+		    top: 0;
+		    width: 100%;
+		    height: 100%;
+		}
+	</style>
+
+	<div class="container">
+		<div class="row">
+
+			<div class="col-lg-6">
+				<div class="input-group">
+					<input type="text" class="form-control" placeholder="Pesquisar por...">
+					<span class="input-group-btn">
+						<button class="btn btn-default btn-pesquisa" type="button">Pesquisar</button>
+					</span>
+				</div>
+
+				<div class="btn-group" data-toggle="buttons">
+				  <label class="btn btn-qtd btn-default active">
+				    <input type="radio" name="options" valor="10" checked>10
+				  </label>
+				  <label class="btn btn-qtd btn-default">
+				    <input type="radio" name="options" valor="20" > 20
+				  </label>
+				  <label class="btn btn-qtd btn-default">
+				    <input type="radio" name="options" valor="30" > 30
+				  </label>
+				</div>				
+			</div>
+
+		</div>
+
+		<div class="row">
+			<div class="col-xs-12 col-sm-6 box-gif"></div>
+		</div>
+
+		<a href="whatsapp://send?text=Acesse: - http://codecommit.com.br">Compartilhar no Whatsapp</a>
+
+	</div>
+
+	<script type='text/javascript' src='../knockout-3.5.0rc.js'></script>
+	<script type="text/javascript" src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+	<script type="text/javascript">
+
+		var qtd = "10";
+
+		jQuery('.btn-qtd').click(function(){
+			jQuery('.btn-qtd').removeClass("active");
+			jQuery(this).addClass("active");
+			qtd = jQuery(this).find("input").attr("valor");
+		});
+
+		jQuery('.btn-pesquisa').click(function(){
+
+			jQuery('.thumb').remove();
+
+			var pesquisa = jQuery('.form-control').val(),
+				gifs = $.get("http://api.giphy.com/v1/gifs/search?q="+pesquisa+"&api_key=kqQeYs6K4qbduygJAQWE76b3QzkOtU5g&limit="+qtd);
+				
+
+			gifs.done(function(data) { 
+				$(data.data).each(function (index, value){
+				  var idGif = data.data[index].id;
+				  var imgTag = '<span class="thumb"><img src="https://media.giphy.com/media/'+idGif+'/giphy.gif"></span>';
+				  $('.box-gif').append(imgTag);
+				});
+			});
+
+		});
+
+
+	</script>
+
+</body>
+</html>
