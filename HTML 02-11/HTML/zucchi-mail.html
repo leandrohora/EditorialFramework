@@ -1,0 +1,973 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Zucchi</title>
+	<style type="text/css">
+
+	/*  CLIENT-SPECIFIC STYLES  */
+
+	#outlook a{padding:0;} 
+	.ReadMsgBody{width:100%;} .ExternalClass{width:100%;} 
+	.ExternalClass, .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td, .ExternalClass div {line-height: 100%;} 
+	body, table, td, p, a, li, blockquote{-webkit-text-size-adjust:100%; -ms-text-size-adjust:100%;} 
+	table, td{mso-table-lspace:0pt; mso-table-rspace:0pt;} 
+	img{-ms-interpolation-mode:bicubic;} 
+
+	/*  RESET STYLES  */
+
+	body{margin:0; padding:0;}
+	img{border:0; height:auto; line-height:100%; outline:none; text-decoration:none; vertical-align: middle;}
+	table{border-collapse:collapse !important;}
+	body, #bodyTable, #bodyCell{height:100% !important; margin:0; padding:0; width:100% !important;}
+
+	/*  TEMPLATE STYLES */
+
+	/* ========== Page Styles ========== */
+
+	#bodyCell{padding:20px;}
+	#templateContainer{width:700px;}
+
+	body, #bodyTable{
+		background-color:#DEE0E2;
+	}
+
+	#bodyCell{
+		border-top:4px solid #BBBBBB;
+	}
+
+	#templateContainer{
+		border: 1px solid #bdbdbd;
+		background: #bdbdbd;
+	}
+
+	h1{
+		color:#202020 !important;
+		display:block;
+		font-family:Helvetica;
+		font-size:26px;
+		font-style:normal;
+		font-weight:bold;
+		line-height:100%;
+		letter-spacing:normal;
+		margin-top:0;
+		margin-right:0;
+		margin-bottom:10px;
+		margin-left:0;
+		text-align:left;
+	}
+
+	h2{
+		color:#404040 !important;
+		display:block;
+		font-family:Helvetica;
+		font-size:20px;
+		font-style:normal;
+		font-weight:bold;
+		line-height:100%;
+		letter-spacing:normal;
+		margin-top:0;
+		margin-right:0;
+		margin-bottom:10px;
+		margin-left:0;
+		text-align:left;
+	}
+	
+	.left h3, .left h4 {
+		text-align:right;
+	}
+
+	h3{
+		color:#373435 !important;
+		display:block;
+		font-family:Helvetica;
+		font-size:17px;
+		font-weight:bold;
+		line-height:100%;
+		letter-spacing:normal;
+		margin-top:0;
+		margin-right:0;
+		margin-bottom:10px;
+		margin-left:0;
+		text-align:left;
+	}
+
+	h4{
+		color:#373435 !important;
+		display:block;
+		font-family:Helvetica;
+		font-size:15px;
+		font-weight:bold;
+		line-height:100%;
+		letter-spacing:normal;
+		margin-top:0;
+		margin-right:0;
+		margin-bottom:10px;
+		margin-left:0;
+		text-align:left;
+	}
+
+	/* ========== Header Styles ========== */
+
+	#templatePreheader{
+	    background-color: #fff;
+	    width: 80%;
+	    border-radius: 0 0 30px 30px;
+	    height: 60px;
+	}
+
+	.preheaderContent{
+		color:#808080;
+		font-family:Helvetica;
+		font-size:12px;
+		line-height:125%;
+		text-align:center;
+	}
+	.preheaderContent a{
+		margin-top: 20px;
+		display: inline-block;
+	}
+
+	.preheaderContent a:link, .preheaderContent a:visited,  .preheaderContent a .yshortcuts {
+		color:#363636;
+		font-weight:normal;
+		text-decoration:underline;
+	}
+
+	#templateHeader{
+		background-color:#bdbdbd;
+	}
+
+	tr.headerWhite {
+		background: #bdbdbd;
+	}
+
+	.headerContent{
+		color:#505050;
+		font-family:Helvetica;
+		font-size:20px;
+		font-weight:bold;
+		line-height:100%;
+		padding-top:0;
+		padding-right:0;
+		padding-bottom:0;
+		padding-left:0;
+		text-align:left;
+		vertical-align:middle;
+	}
+
+	.headerContent a:link, .headerContent a:visited,  .headerContent a .yshortcuts {
+		color:#EB4102;
+		font-weight:normal;
+		text-decoration:underline;
+	}
+
+	.headerContent img {
+		display: block;
+		margin-top: 45px;
+		margin-bottom: 45px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.headerContent.right .vendorBox {
+		display: table;
+		margin-top: 0;
+		margin-bottom: 0;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.headerContent.right .vendorStuff {
+		display: inline-block;
+	}
+	.headerContent.right .vendorName {
+		font-size: 12px;
+		display: block;
+	}
+	.headerContent.right .vendorTel {
+		font-size: 20px;
+		display: block;
+	}
+
+	#headerImage{
+		height:auto;
+		max-width:700px;
+	}
+
+	/* ========== Body Styles ========== */
+
+	#templateBody{
+		background-color:#bdbdbd;
+	}
+
+	.bodyContent{
+		color:#505050;
+		font-family:Helvetica;
+		font-size:16px;
+		line-height:140%;
+		padding-top:20px;
+		padding-right:20px;
+		padding-bottom:20px;
+		padding-left:20px;
+		text-align:center;
+	}
+
+	.bodyContent a:link, .bodyContent a:visited,  .bodyContent a .yshortcuts {
+		color:#EB4102;
+		font-weight:normal;
+		text-decoration:underline;
+	}
+
+	.bodyContent p{
+	    width: 100%;
+	    max-width: 87%;
+		margin-top:0;
+		margin-right:auto;
+		margin-bottom:0;
+		margin-left:auto;	    
+	}
+
+	.bodyContent img{
+		display:inline;
+		height:auto;
+	}
+
+	.bodyContent span{
+		background: #000;
+		color: #ffd188;
+		display: block;
+		width: 100%;
+		max-width: 562px;
+		margin-top:0;
+		margin-right:auto;
+		margin-bottom:0;
+		margin-left:auto;		
+		font-size: 22px;
+		font-weight: 600px;
+		font-style:italic;
+		padding: 15px 0;
+	}
+
+	.bodyContent img.newOfferImg {
+	    margin-top: 15px;
+	    margin-bottom: 25px;
+	}
+
+	/* ========== CTA Style ============== */
+
+	.bodyContent a.cta {
+	    padding-top: 12px;
+	    margin-top: 50px;
+	    margin-bottom: 10px;
+	    padding-right: 60px;
+	    padding-bottom: 12px;
+	    padding-left: 60px;
+	    background-color: #ffd188;
+	    font-weight: 600;
+	    display: inline-block;
+	    color: #000;
+	    font-size: 15px;
+	    text-decoration: none;
+	    border-radius: 40px;
+	}
+
+	.bodyContent a.cta.footer {
+		margin-top: 20px;
+	}
+
+	a.cta.prod {
+	    padding-top: 6px;
+	    padding-right: 40px;
+	    padding-bottom: 6px;
+	    padding-left: 40px;
+	    margin-left: 20px;
+	    background-color: #363636;
+	    display: inline-block;
+	    color: #fff;
+	    font-family: Helvetica;
+	    font-size: 11px;
+	    font-weight: bold;
+	    text-decoration: none;
+	    text-transform: uppercase;
+	    border-radius: 20px;
+	}
+
+	p.price {
+		font-size: 21px;
+		font-family:Helvetica;
+		font-weight: bold;
+		color: #363636;
+		margin: 0;
+		display: inline-block;
+	}
+
+	/* ========== Column Styles ========== */
+
+	.templateColumnContainer{width:260px;}
+
+	.templateColumns{
+		background-color:#bdbdbd;
+		margin-bottom: 30px;
+	}
+
+	.leftColumnContent{
+		color:#505050;
+		font-family:Helvetica;
+		font-size:14px;
+		line-height:150%;
+		padding-top:0;
+		padding-right:0px;
+		padding-bottom:10px;
+		padding-left:20px;
+		text-align:left;
+	}
+	
+	.leftColumnContent.right {
+		padding-top:0;
+		padding-right:0px;
+		padding-bottom:10px;
+		padding-left:40px;
+	}
+
+	.leftColumnContent a:link, .leftColumnContent a:visited,  .leftColumnContent a .yshortcuts {
+		color:#EB4102;
+		font-weight:normal;
+		text-decoration:underline;
+	}
+
+	.rightColumnContent{
+		color:#505050;
+		font-family:Helvetica;
+		font-size:14px;
+		line-height:150%;
+		padding-top:0;
+		padding-right:20px;
+		padding-bottom:20px;
+		padding-left:0px;
+		text-align:left;
+	}
+	
+	.rightColumnContent.left {
+		padding-top:0;
+		padding-right:0px;
+		padding-bottom:5px;
+		padding-left:20px;
+	}
+
+	.rightColumnContent p {
+		color:#363636;
+		font-family:Helvetica;
+		font-size:14px;
+		line-height:150%;
+		padding-top:5px;
+		padding-bottom:5px;
+		margin-top: 0px;
+		margin-bottom: 0px;
+	}
+
+	.rightColumnContent.left p {
+		text-align: right;
+	}
+
+	.rightColumnContent p.first {
+		margin-top: 20px;
+	}
+
+	.rightColumnContent a:link, .rightColumnContent a:visited,  .rightColumnContent a .yshortcuts {
+		color:#EB4102;
+		font-weight:normal;
+		text-decoration:underline;
+	}
+
+	.leftColumnContent img, .rightColumnContent img{
+		display:inline;
+		height:auto;
+		max-width:260px;
+	}
+
+	/* Tables */
+
+	tr.conversionBar td {
+		padding-top: 5px;
+		padding-bottom: 5px;
+		padding-right: 0;
+		padding-left: 0;
+	}
+
+	tr.conversionBar .icon-price-img {
+		margin-left: 23px;
+   		margin-right: 23px;
+	}
+
+	tr.conversionBar .icon-price-img.right {
+		margin-left: 43px;
+	}
+
+
+	tr.conversionBar .price-wrapper {
+	    background: #ffd188;
+	    padding-top: 15px;
+	    padding-bottom: 15px;
+	    padding-right: 20px;
+	    padding-left: 20px;
+	    border-radius: 3px;
+	}
+
+	.leftColumnContent tr.conversionBar td {
+		padding-right: 0;
+	}
+
+	.rightColumnContent tr.conversionBar td {
+		padding-left: 0;
+	}
+	
+	tr.conversionBar.left td {
+		text-align: right;
+	}
+
+	td.productProps {
+		padding-bottom: 5px;
+	}
+
+	/* ========== Footer Styles ========== */
+
+	#templateFooter{
+		background-color:#bdbdbd;
+		border-top:1px solid #bdbdbd;
+		margin-top: 30px;
+		margin-bottom: 30px;
+	}
+
+	.footerContent{
+		color:#808080;
+		font-family:Helvetica;
+		font-size:10px;
+		font-weight: bold;
+		line-height:150%;
+		padding-top:20px;
+		padding-right:20px;
+		padding-bottom:20px;
+		padding-left:20px;
+		text-align:center;
+	}
+
+	.footerContent a:link, .footerContent a:visited,  .footerContent a .yshortcuts, .footerContent a span {
+		color:#606060;
+		font-weight:normal;
+		text-decoration:underline;
+	}
+
+	.footerContent .socialBox {
+		display: block;
+		margin-top: 20px;
+		margin-bottom: 0;
+		margin-left: 0;
+		margin-right: 0;
+		float: right;
+	}
+
+	.footerContent em {
+	    width: 100%;
+	    max-width: 270px;
+	    margin-top: 30px;
+	    display: block;
+	    color: #fff;
+	    font-size: 13px;
+	    line-height: 150%;
+	    text-align: left;
+	}
+
+	.footerContent.vendor {
+		color:#808080;
+		font-family:Helvetica;
+		font-size:12px;
+		font-weight: bold;
+	}
+
+
+	.footerContent.vendor p {
+		color: #000;
+		text-align: right;
+		font-size: 20px;
+		margin-bottom: 30px;
+	}
+
+	.footerContent-left{
+		background: url(./img/bg-form-footer.png);
+		background-repeat: no-repeat;
+		background-position: left center;
+		width: 60%;
+		float: left;
+		height: 400px;
+	}
+
+	.footerContent-left img{
+		display: block;
+		margin-top: 90px;
+		padding-left: 50px;
+	}
+
+	.footerContent-left em{
+		padding-left: 50px;
+	}
+
+	.footerContent-right{
+		width: 40%;
+		float: left;
+	}
+
+	.footerContent-right .wrapper{
+	    margin-right: 45px;
+	    margin-top: 90px;
+	}
+
+	.footerContent span.vendorContact {
+		text-align: right;
+		display: block;
+		margin-bottom: 15px;
+		font-size: 14px;
+		color: #363636;
+	}
+
+
+	.footerContent.social {
+		border-top: 1px solid #999;
+	}
+	
+	.hide-md {
+		display: none !important;
+	}
+
+	/* MOBILE STYLES */
+
+	@media only screen and (max-width: 480px){
+		/* CLIENT-SPECIFIC MOBILE STYLES */
+		body, table, td, p, a, li, blockquote{-webkit-text-size-adjust:none !important;} 
+		body{width:100% !important; min-width:100% !important;}
+
+		/* MOBILE RESET STYLES */
+		#bodyCell{padding:10px !important;}
+
+		/* MOBILE TEMPLATE STYLES */
+
+		/* ======== Page Styles ======== */
+
+		tr.conversionBar .icon-price-img{
+			display: none;
+		}
+
+		.footerContent-left{
+			background: #000;
+			width: 100%;
+			text-align: center!important;
+		}
+
+		.footerContent-left img,
+		.footerContent-left em{
+			padding-left: 0;
+			display: inline-block;
+			text-align: center!important;
+		}
+
+		.footerContent-left em{
+			max-width: 213px;
+		}
+		h3, h4, .rightColumnContent p {
+		    text-align: center!important;
+		}
+
+		.footerContent-right{
+			width: 100%;
+		}
+
+		.footerContent-right .wrapper{
+			margin-top: 60px;
+			margin-right: 0px;
+		}
+		.footerContent.vendor p{
+			text-align: center;
+		}
+
+		.footerContent .socialBox{
+			float: none;
+		}
+
+		#templateContainer{
+			max-width:700px !important;
+			width:100% !important;
+		}
+
+		h1{
+			font-size:24px !important;
+			line-height:100% !important;
+		}
+
+		h2{
+			font-size:20px !important;
+			line-height:100% !important;
+		}
+
+		h3{
+			font-size:18px !important;
+			line-height:100% !important;
+		}
+
+		h4{
+			font-size:16px !important;
+			line-height:100% !important;
+		}
+
+		/* ======== Header Styles ======== */
+
+		#templatePreheader{display:none !important;} 
+
+		#headerImage{
+			height:auto !important;
+			max-width:600px !important;
+			width:100% !important;
+		}
+
+		.headerContent{
+			font-size:20px !important;
+			line-height:125% !important;
+		}
+		
+		.headerContent.left, .headerContent.right {
+			display: block;
+		}
+
+		/* ======== Body Styles ======== */
+
+		.bodyContent{
+			font-size:18px !important;
+			line-height:125% !important;
+		}
+		
+		.bodyContent img {
+			display: block;
+			height: auto;
+			width: 100%;
+		}
+		/* ======== Column Styles ======== */
+
+		.templateColumnContainer{display:block !important; width:100% !important;}
+
+		.columnImage{
+			height:auto !important;
+			max-width:480px !important;
+			width:100% !important;
+		}
+
+		.leftColumnContent,.leftColumnContent.right {
+			font-size:16px !important;
+			line-height:125% !important;
+			padding-left: 5px;
+			padding-right: 5px;
+		}
+
+		.rightColumnContent, .rightColumnContent.left{
+			font-size:16px !important;
+			line-height:125% !important;
+			padding-left: 10px;
+			padding-right: 10px;
+		}
+		
+		.conversionBar.left td {
+			padding-right: 10px;
+		}
+
+		.price {
+			/*padding-left: 10px;*/
+		}
+		tr.conversionBar .price-wrapper{
+			padding-right: 10px;
+   			padding-left: 10px;
+		    display: block;
+		    text-align: center;
+		}
+		/* ======== Footer Styles ======== */
+
+		.footerContent{
+			font-size:14px !important;
+			line-height:115% !important;
+		}
+
+		.footerContent a{display:block !important;} 
+
+		.footerContent span.vendorContact {
+			display: table;
+			margin-top: 10px;
+			margin-bottom: 20px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		.footerContent .socialBox a {
+			display: inline-block !important;
+		}
+
+		/* ======== Helper Styles ======== */
+
+		.hide-xs {
+			display: none !important;
+		}
+	}
+</style>
+</head>
+<body leftmargin="0" marginwidth="0" topmargin="0" marginheight="0" offset="0">
+	<center>
+		<table align="center" border="0" cellpadding="0" cellspacing="0" height="100%" width="100%" id="bodyTable">
+			<tr>
+				<td align="center" valign="top" id="bodyCell">
+					<!-- BEGIN TEMPLATE // -->
+					<table border="0" cellpadding="0" cellspacing="0" id="templateContainer">
+						<tr>
+							<td align="center" valign="top">
+								<!-- BEGIN PREHEADER // -->
+								<table border="0" cellpadding="0" cellspacing="0" width="100%" id="templatePreheader">
+									<tr>
+										<td colspan="2" valign="top" width="180" class="preheaderContent" style="padding-top:10px; padding-right:20px; padding-bottom:10px; padding-left:0;" mc:edit="preheader_content01">
+											<a href="*|ARCHIVE|*" target="_blank">Access the online version if you can not see this email.</a>.
+										</td>
+									</tr>
+								</table>
+								<!-- // END PREHEADER -->
+							</td>
+						</tr>
+						<tr class="headerWhite">
+							<td align="center" valign="top">
+								<!-- BEGIN HEADER // -->
+								<table border="0" cellpadding="0" cellspacing="0" width="90%" id="templateHeader">
+									<tr>
+										<td valign="top" class="headerContent">
+											<img src="./img/logo.png" alt="" />
+										</td>
+									</tr>
+								</table>
+								<!-- // END HEADER -->
+							</td>
+						</tr>
+						<tr>
+							<td align="center" valign="top">
+								<!-- BEGIN BODY // -->
+								<table border="0" cellpadding="0" cellspacing="0" width="100%" id="templateBody">
+									<tr>
+										<td valign="top" class="bodyContent" mc:edit="body_content">
+											<span>New Arrivals from Zucchi</span>
+											<img src="./img/image-banner.png" alt="" class=bannerImg" />
+										</td>										
+									</tr>
+									<tr>
+										<td valign="top" class="bodyContent" mc:edit="body_content">
+											<img src="./img/new-offer.png" alt="" class="newOfferImg" />
+											<p>Dear Customer, Some email services don't support this message. If you can`t see the images correctly, please click on the button <b>"view offer"</b> below. If your email service is Gmail, don't forget to allow the message to show the images.</p>
+											<a href="#" class="cta">View Offer</a>
+											<br />
+											<br />
+										</td>
+									</tr>
+								</table>
+								<!-- // END BODY -->
+							</td>
+						</tr>
+						<tr>
+							<td align="center" valign="top">
+								<!-- BEGIN COLUMNS // -->
+								<table border="0" cellpadding="0" cellspacing="0" width="100%" class="templateColumns">
+									<tr mc:repeatable>
+										<td align="center" valign="top" class="templateColumnContainer" style="padding-top:20px;">
+											<table border="0" cellpadding="20" cellspacing="0" width="100%">
+												<tr>
+													<td class="leftColumnContent">
+														<img src="./img/img-teste.png" style="max-width:358px;" class="columnImage" mc:label="left_column_image" mc:edit="left_column_image" />
+													</td>
+												</tr>
+												<tr class="conversionBar">													
+													<td>
+														<img class="icon-price-img" src="./img/icon-price.png">
+														<span class="price-wrapper"><p class="price">$14,75 / ft²</p> <a href="#" class="cta prod">View</a></span >
+													</td> 
+												</tr>
+											</table>
+										</td>
+										<td align="center" valign="top" class="templateColumnContainer" style="padding-top:20px;">
+											<table border="0" cellpadding="20" cellspacing="0" width="100%">
+												<tr>
+													<td colspan="2" valign="top" class="rightColumnContent productProps" mc:edit="right_column_content">
+														<h3>BD00079860 | 037716</h3>
+														<h4>Acadian Night | Premium | 2cm</h4>
+														<p class="first">Thickness: 3/4 in</p>
+														<p>Dimensions: 118.78in x 67.83in</p>
+														<p>Finish: Polished</p>
+														<p>Slab count: 10</p>
+														<p>Quantity: 52.00ft²</p>
+														<p>Slabs: 1, 2, 3, 4, 5, 6, 7, 8</p>
+														<p>Weight: 2806.51 kg</p>
+													</td>
+												</tr>												
+											</table>
+										</td>
+									</tr>
+								</table>
+								<!-- // END COLUMNS -->
+							</td>
+						</tr>
+
+						<tr>
+							<td align="center" valign="top">
+								<!-- BEGIN COLUMNS // -->
+								<table border="0" cellpadding="0" cellspacing="0" width="100%" class="templateColumns">
+									<tr mc:repeatable>
+										<td align="center" valign="top" class="templateColumnContainer hide-md" style="padding-top:20px;">
+											<table border="0" cellpadding="20" cellspacing="0" width="100%">
+												<tr>
+													<td class="leftColumnContent right">
+														<img src="./img/img-teste.png" style="max-width:358px;" class="columnImage" mc:label="left_column_image" mc:edit="left_column_image" />
+													</td>
+												</tr>
+												<tr class="conversionBar">													
+													<td>
+														<img class="icon-price-img right" src="./img/icon-price.png">
+														<span class="price-wrapper"><p class="price">$14,75 / ft²</p> <a href="#" class="cta prod">View</a></span >
+													</td> 
+												</tr>
+											</table>
+										</td>
+
+										<td align="center" valign="top" class="templateColumnContainer" style="padding-top:20px;">
+											<table border="0" cellpadding="20" cellspacing="0" width="100%">
+												<tr>
+													<td colspan="2" valign="top" class="rightColumnContent left productProps" mc:edit="right_column_content">
+														<h3>BD00079860 | 037716</h3>
+														<h4>Acadian Night | Premium | 2cm</h4>
+														<p class="first">Thickness: 3/4 in</p>
+														<p>Dimensions: 118.78in x 67.83in</p>
+														<p>Finish: Polished</p>
+														<p>Slab count: 10</p>
+														<p>Quantity: 52.00ft²</p>
+														<p>Slabs: 1, 2, 3, 4, 5, 6, 7, 8</p>
+														<p>Weight: 2806.51 kg</p>
+													</td>
+												</tr>
+											</table>
+										</td>
+
+										<td align="center" valign="top" class="templateColumnContainer hide-xs" style="padding-top:20px;">
+											<table border="0" cellpadding="20" cellspacing="0" width="100%">
+												<tr>
+													<td class="leftColumnContent right">
+														<img src="./img/img-teste.png" style="max-width:358px;" class="columnImage" mc:label="left_column_image" mc:edit="left_column_image" />
+													</td>
+												</tr>
+
+												<tr class="conversionBar">													
+													<td>
+														<img class="icon-price-img right" src="./img/icon-price.png">
+														<span class="price-wrapper"><p class="price">$14,75 / ft²</p> <a href="#" class="cta prod">View</a></span >
+													</td> 
+												</tr>
+											</table>
+										</td>
+
+									</tr>
+								</table>
+								<!-- // END COLUMNS -->
+							</td>
+						</tr>
+
+						<tr>
+							<td align="center" valign="top">
+								<!-- BEGIN COLUMNS // -->
+								<table border="0" cellpadding="0" cellspacing="0" width="100%" class="templateColumns">
+									<tr mc:repeatable>
+										<td align="center" valign="top" class="templateColumnContainer" style="padding-top:20px;">
+											<table border="0" cellpadding="20" cellspacing="0" width="100%">
+												<tr>
+													<td class="leftColumnContent">
+														<img src="./img/img-teste.png" style="max-width:358px;" class="columnImage" mc:label="left_column_image" mc:edit="left_column_image" />
+													</td>
+												</tr>
+												<tr class="conversionBar">													
+													<td>
+														<img class="icon-price-img" src="./img/icon-price.png">
+														<span class="price-wrapper"><p class="price">$14,75 / ft²</p> <a href="#" class="cta prod">View</a></span >
+													</td> 
+												</tr>
+											</table>
+										</td>
+										<td align="center" valign="top" class="templateColumnContainer" style="padding-top:20px;">
+											<table border="0" cellpadding="20" cellspacing="0" width="100%">
+												<tr>
+													<td colspan="2" valign="top" class="rightColumnContent productProps" mc:edit="right_column_content">
+														<h3>BD00079860 | 037716</h3>
+														<h4>Acadian Night | Premium | 2cm</h4>
+														<p class="first">Thickness: 3/4 in</p>
+														<p>Dimensions: 118.78in x 67.83in</p>
+														<p>Finish: Polished</p>
+														<p>Slab count: 10</p>
+														<p>Quantity: 52.00ft²</p>
+														<p>Slabs: 1, 2, 3, 4, 5, 6, 7, 8</p>
+														<p>Weight: 2806.51 kg</p>
+													</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+								</table>
+								<!-- // END COLUMNS -->
+							</td>
+						</tr>
+
+						<tr>
+							<td align="center" valign="top">
+								<table border="0" cellpadding="0" cellspacing="0" width="100%">
+									<tr>
+										<td valign="top" class="bodyContent" mc:edit="body_content">
+											<a href="#" class="cta footer">View Offer</a>
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+
+						<tr>
+							<td align="center" valign="top">
+								<!-- BEGIN FOOTER // -->
+								<table border="0" cellpadding="0" cellspacing="0" width="100%" id="templateFooter">
+									<tr valign="top" class="footerContent vendor">
+										<td>
+											<div class="footerContent-left"  mc:edit="footer_content02">
+												<img src="./img/logo-small.png" alt="" />
+												<em>Dear Customer, some email services don't support this message. If you can`t see the images correctly, please click on the button "view offer". If your email service is Gmail, don't forget to allow the message to show the images.</em>
+												<br />
+											</div>
+
+											<div class="footerContent-right" mc:edit="footer_content01">
+												<div class="wrapper">
+													<p>Nome do vendedor</p>
+													<span class="vendorContact">&nbsp;+55 27 3243-9666 &nbsp;&nbsp;&nbsp; <img src="./img/icon-tel-sm.png" alt="" /></span>
+													<span class="vendorContact">&nbsp;+55 27 3243-9666 &nbsp;&nbsp;&nbsp; <img src="./img/icon-cel.png" alt="" /></span>
+													<span class="vendorContact">&nbsp;nomedovendedor &nbsp;&nbsp;&nbsp; <img src="./img/icon-skype.png" alt="" /></span>
+
+													<div class="socialBox">
+														<a href="*|INSTAGRAM|*"><img src="./img/instagram.png" alt="" /></a>&nbsp;&nbsp;&nbsp;
+														<a href="*|FACEBOOK|*"><img src="./img/facebook.png" alt="" /></a>&nbsp;&nbsp;&nbsp;
+														<a href="*|YOUTUBE|*"><img src="./img/youtube.png" alt="" /></a>&nbsp;&nbsp;&nbsp;
+														<a href="*|LINKEDIN|*"><img src="./img/linkedin.png" alt="" /></a>&nbsp;&nbsp;&nbsp;
+													</div>
+												</div>
+											</div>
+										</td>
+									</tr>
+								</table>
+								<!-- // END FOOTER -->
+							</td>
+						</tr>
+					</table>
+					<!-- // END TEMPLATE -->
+				</td>
+			</tr>
+		</table>
+	</center>
+</body>
+</html>
